@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SwagLabsTestSuite">  
+    <test name="TestsForMultipleGroups">
+        <groups>
+            <run>
+                <include name="standard"/>
+                <include name="nonStandard"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testRunner.testRunner"/>
+        </classes>
+    </test>
+</suite>
